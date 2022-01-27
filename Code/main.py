@@ -85,7 +85,7 @@ def decrypted_dic(data, key):
 def add_to_mongo(data):
     try:
         client = pymongo.MongoClient(
-            'mongodb+srv://miniproject:miniproject123@sandbox.sqigw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+            'Here enter your mongodb client connection string')
         db = client.ehr
         collection = db["ehr"]
         collection.insert_one(data)
